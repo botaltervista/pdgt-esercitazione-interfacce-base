@@ -88,6 +88,12 @@ Come si ottiene l’utima riga della Divina Commedia?
 Inserire qui il comando che produce la risposta
 
 cat divina_commedia.txt | tail
+
+cat divina_commedia.txt |tail -n 1
+  l'amor che move il sole e l'altre stelle.
+
+
+
 ```
 
 ### 2. A proposito di stelle
@@ -97,7 +103,9 @@ Le stelle occupano un significato simbolico all’intero della Divina Commedia. 
 ```bash
 Inserire qui il comando che produce la risposta
 
-26 volte
+cat divina_commedia.txt |grep -i "stelle"|wc
+     26     181    1010
+
 ```
 
 ### 3. Lista dei file
