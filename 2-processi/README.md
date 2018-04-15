@@ -115,7 +115,9 @@ Trovare il file più piccolo presente in questa cartella.
 ```bash
 Inserire qui il comando che produce la risposta
 
-ls -S
+ ls | tail -n 1
+README.md
+
 
 ```
 
@@ -130,6 +132,6 @@ Trovare il comando che generi la lista delle domande per la consegna.
 ```bash
 Inserire qui il comando che produce la risposta
 
-curl http://https://raw.githubusercontent.com/DigiPlatMOOC/pdgt-esercitazione-interfacce-base/master/2-processi/README.md | grep -i "###"
+curl https://raw.githubusercontent.com/DigiPlatMOOC/pdgt-esercitazione-interfacce-base/master/2-processi/README.md | grep -i "###" | tail -n 4
 
 ```
