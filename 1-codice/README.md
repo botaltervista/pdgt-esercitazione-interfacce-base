@@ -50,7 +50,7 @@ gcc test.c divide.a -o test
 A questo punto dovremmo ottenere un file eseguibile `test` che possiamo eseguire.
 
 ```bash
-./test
+./testo
 ```
 
 ## Consegna
